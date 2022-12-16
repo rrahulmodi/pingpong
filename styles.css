@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  position: relative;
+  height: 50vh;
+}
+.left {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 380px;
+  animation-name: barsmoving;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.ball {
+  background-color: black;
+  position: absolute;
+  top: 80%;
+  left: 4%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  animation-name: ballmoving;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.right {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 380px;
+  animation-name: barsmoving;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes barsmoving {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 90%;
+  }
+}
+
+@keyframes ballmoving {
+  from {
+    left: 4%;
+  }
+  to {
+    left: 90%;
+  }
+}
